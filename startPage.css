@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: white;
+  background-color: black;
+}
+/* Стили для хэдера */
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 0 0 2px #5757ff, 0 0 0 8px black, 0 0 0 10px #5757ff;
+}
+/* Стили для левой части */
+header .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header .menu img {
+  height: 42px;
+}
+
+header span {
+  font-family: VT323, sans-serif;
+  font-size: 32px;
+  margin-left: 10px;
+}
+/* Кнопка с выпадающими ссылками */
+header button {
+  display: flex;
+  align-items: center;
+  border: 2px solid #5757ff;
+  border-radius: 5px;
+  padding: 0 14px 0 14px;
+}
+
+header button img {
+  height: 19px;
+  width: 19px;
+  margin-right: 8px;
+}
+
+.dropdown {
+  display: inline-block;
+  margin-left: 24px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  border: 2px solid #5757ff;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 2px solid #5757ff;
+}
+
+.dropdown-content a:hover {
+  background-color: #2b2b7f;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-btn:hover,
+.dropdown:hover .dropdown-btn,
+.dropdown:hover img {
+  background-color: #2b2b7f;
+}
+
+/* Призраки */
+header .ghostWithMargin {
+  margin-right: 48px;
+  transition: 0.3s linear;
+}
+
+@media (max-width: 1000px) {
+  header .ghostWithMargin {
+    margin-right: 0;
+  }
+}
+
+/* Правая часть  */
+header .serch {
+  display: flex;
+  align-items: center;
+}
+
+header .serch input {
+  height: 42px;
+  border: 2px solid #5757ff;
+  border-radius: 5px;
+}
+header .serch button {
+  position: relative;
+  right: 8px;
+  padding: 13.5px 16px;
+  border: 2px solid #5757ff;
+  background-color: #5757ff;
+  border-radius: 5px;
+}
+
+/* Стили для основного блока */
+.body {
+  margin-top: 54px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.body .sideDesign {
+  margin: 0 90px;
+  transition: 0.3s linear;
+}
+
+@media (max-width: 1500px) {
+  .body .sideDesign {
+    margin: 0 15px;
+  }
+}
+
+.body .infoBlock {
+  max-width: 800px;
+  padding: 54px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 2px #5757ff, 0 0 0 8px black, 0 0 0 10px #5757ff;
+}
+
+
+.body .infoBlock h1 {
+  font-weight: bold;
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+.body .infoBlock p {
+    font-size: 14px;
+  }
+
+.body .infoBlock img {
+  max-width: 160px;
+  padding: 45px;
+  float: right;
+  border: 2px solid #5757ff;
+  border-radius: 5px;
+}
+
+/* Стили для футера */
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 0 0 2px #5757ff, 0 0 0 8px black, 0 0 0 10px #5757ff;
+}
