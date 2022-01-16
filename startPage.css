@@ -4,9 +4,16 @@
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
+  line-height: 1.5;
   color: white;
   background-color: black;
 }
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
 /* Стили для хэдера */
 header {
   height: 80px;
@@ -116,9 +123,10 @@ header .serch button {
 
 /* Стили для основного блока */
 .body {
-  margin-top: 54px;
+  margin: 54px 0 124px 0;
   display: flex;
   justify-content: space-around;
+  align-items: flex-start;
 }
 
 .body .sideDesign {
@@ -148,6 +156,7 @@ header .serch button {
 
 .body .infoBlock p {
     font-size: 14px;
+    
   }
 
 .body .infoBlock img {
@@ -156,12 +165,13 @@ header .serch button {
   float: right;
   border: 2px solid #5757ff;
   border-radius: 5px;
+  margin-left: 16px;
 }
 
 /* Стили для футера */
 
 footer {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
